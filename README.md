@@ -1,214 +1,261 @@
-Capital Project Management Dashboard
-📌 Project Overview
+# 🚧 Capital Project Management Dashboard
 
-The Capital Project Management Dashboard is an end-to-end Power BI solution designed to monitor, analyze, and optimize capital project execution. The dashboard provides stakeholders with a centralized view of project budgets, costs, profitability, task progress, resource allocation, project status, and timeline tracking.
+## 📌 Overview
 
-Built using a robust Star Schema Data Model, advanced DAX measures, Row-Level Security (RLS), and custom SVG-based KPI indicators, the solution enables project managers and executives to make data-driven decisions throughout the project lifecycle.
+The **Capital Project Management Dashboard** is an end-to-end Power BI solution designed to monitor, analyze, and optimize capital project execution. The dashboard provides stakeholders with a centralized view of project budgets, costs, profitability, task progress, resource allocation, project status, and timeline tracking.
 
-🎯 Business Problem
+Built using a robust **Star Schema Data Model**, advanced **DAX measures**, **Row-Level Security (RLS)**, and custom **SVG-based KPI indicators**, the solution enables project managers and executives to make data-driven decisions throughout the project lifecycle.
 
-Managing multiple capital projects often involves challenges such as:
+---
 
-Budget overruns
-Delayed project completion
-Limited visibility into project progress
-Resource allocation inefficiencies
-Difficulty tracking project profitability
+## 📷 Dashboard Preview
 
-This dashboard addresses these challenges by providing real-time project monitoring and performance analytics.
+### Executive Overview
 
-📊 Dashboard Features
-1. Executive Overview Page
+![Overview Dashboard](assets/dashboard-overview.png)
 
-Provides a high-level summary of project performance:
+### Task Timeline
 
-Key KPIs
-Total Projects
-Total Tasks
-Total Cost
-Budget Utilization %
-Task Completion %
-Financial Analysis
-Monthly Budget vs Cost Trends
-Monthly Profit Analysis
-Budget Utilization Monitoring
-Project Tracking
-Project Status Distribution
-Task Priority Analysis
-Progress Group Monitoring
-Project Type Analysis
-Geographic Insights
-Project & Task Distribution by Location
-Project Manager Performance
-Cost Management
-Budget Allocation
-Profit Contribution
-Task Completion Rates
-Budget Utilization Metrics
-2. Task Timeline Page
+![Task Timeline](assets/task-timeline.png)
 
-Interactive Gantt-style visualization showing:
+---
 
-Project Hierarchy
-Task-Level Progress
-Start & End Dates
-Project Managers
-Task Status Tracking
-Timeline Monitoring
-Delayed Task Identification
-🏗️ Data Model Architecture
+## 🎯 Business Problem
 
-The dashboard follows a Star Schema approach for improved performance and scalability.
+Organizations managing multiple capital projects often struggle with:
 
-Fact Tables
-FactProjects
-FactTasks
-FactBudget
-FactCost
-Dimension Tables
-DimDate
-DimProject
-DimProjectManager
-DimLocation
-DimProjectStatus
-DimTaskPriority
-DimTaskStatus
-DimProjectType
-Benefits of Star Schema
+* Budget overruns
+* Schedule delays
+* Limited project visibility
+* Resource allocation challenges
+* Tracking project profitability
 
-✔ Faster Query Performance
-✔ Reduced Model Complexity
-✔ Improved DAX Efficiency
-✔ Easier Maintenance & Scalability
+This dashboard addresses these challenges through centralized project monitoring and analytics.
 
-🔒 Row-Level Security (RLS)
+---
 
-Implemented Dynamic Row-Level Security (RLS) to ensure users only access data relevant to their responsibilities.
+## 📊 Key Features
 
-Security Scenarios
-Project Managers can view only their assigned projects.
-Department Heads can view projects under their departments.
-Executives have full access.
-Benefits
-Enhanced Data Governance
-Secure Self-Service Reporting
-Role-Based Data Access
-⚡ Advanced Power BI Concepts Used
-DAX Measures
+### Executive Overview Dashboard
 
-Developed advanced measures for:
+#### KPI Monitoring
 
-Budget Utilization %
-Profit Calculation
-Task Completion %
-Cost Variance
-Budget Variance
-Progress Tracking
-Dynamic KPI Cards
-Time Intelligence Metrics
+* Total Projects
+* Total Tasks
+* Total Cost
+* Budget Utilization %
+* Task Completion %
 
-Examples:
+#### Financial Analysis
 
-Profit =
-SUM(FactProjects[Budget])
--
-SUM(FactProjects[Cost])
-Task Completion % =
-DIVIDE(
-    [Completed Tasks],
-    [Total Tasks]
-)
-Time Intelligence
+* Budget vs Cost Trends
+* Monthly Profit Analysis
+* Budget Utilization Monitoring
 
-Implemented:
+#### Project Tracking
 
-YTD Analysis
-MTD Analysis
-Monthly Trend Analysis
-Period-over-Period Comparisons
-Advanced Filtering
-Dynamic Year Slicer
-Cross-Filtering
-Drill-through Navigation
-Interactive Page Navigation
-Context-Aware Visuals
-🎨 Custom SVG Visuals
+* Project Status Distribution
+* Task Priority Analysis
+* Progress Monitoring
+* Project Type Analysis
 
-To enhance user experience and visualization quality, custom SVG-based visuals were utilized.
+#### Geographic Analysis
 
-SVG Use Cases
-KPI Progress Bars
-Budget Utilization Indicators
-Task Completion Indicators
-Performance Tracking Visuals
-Benefits
-Lightweight Rendering
-Fully Dynamic
-Responsive Design
-Better Visual Consistency
-Improved Dashboard Aesthetics
+* Project and Task Distribution by Location
 
-Example SVG Components:
+#### Project Manager Performance
 
-Progress Bars
-Circular Indicators
-Dynamic KPI Visuals
-📈 Key Insights Generated
+* Budget Management
+* Cost Tracking
+* Profit Contribution
+* Task Completion Monitoring
 
-The dashboard helps answer critical business questions such as:
+---
 
-Which projects are over budget?
-Which project managers deliver the highest profitability?
-What percentage of tasks are completed?
-Which project types consume the most resources?
-Where are project delays occurring?
-Which regions have the highest project concentration?
-🛠️ Tools & Technologies
-Technology	Usage
-Power BI Desktop	Dashboard Development
-Power Query	Data Transformation
-DAX	Business Logic & Calculations
-SVG	Custom Visual Development
-Star Schema	Data Modeling
-RLS	Data Security
-Bing Maps	Geographic Visualization
-🚀 Performance Optimization Techniques
-Star Schema Modeling
-Optimized Relationships
-Measure-Based Calculations
-Reduced Cardinality
-Query Folding
-Efficient DAX Patterns
-Proper Aggregation Strategies
-📷 Dashboard Preview
-Executive Overview
-Financial performance tracking
-Project status monitoring
-Budget utilization analysis
-Resource performance measurement
-Task Timeline
-Gantt-style project tracking
-Milestone monitoring
-Task progress visualization
-Schedule management
-💡 Business Impact
+### Task Timeline Dashboard
 
-This solution empowers organizations to:
+Interactive Gantt-style visualization featuring:
 
-Improve project visibility
-Reduce budget overruns
-Monitor project profitability
-Enhance resource utilization
-Improve stakeholder reporting
-Strengthen project governance
-⭐ Project Highlights
+* Project Hierarchy
+* Task Progress Tracking
+* Start and End Dates
+* Project Manager Assignments
+* Status Monitoring
+* Timeline Analysis
+* Delay Identification
 
-✅ End-to-End Power BI Solution
-✅ Star Schema Data Model
-✅ Dynamic Row-Level Security (RLS)
-✅ Advanced DAX Calculations
-✅ Custom SVG Visualizations
-✅ Interactive Gantt Timeline
-✅ Financial & Operational Analytics
-✅ Executive-Level Reporting
-✅ Performance Optimized Data Model
+---
+
+## 🏗️ Data Model Architecture
+
+This solution follows a **Star Schema** design for improved scalability and performance.
+
+### Fact Tables
+
+* FactProjects
+* FactTasks
+* FactBudget
+* FactCost
+
+### Dimension Tables
+
+* DimDate
+* DimProject
+* DimProjectManager
+* DimLocation
+* DimProjectStatus
+* DimTaskPriority
+* DimTaskStatus
+* DimProjectType
+
+### Star Schema Benefits
+
+* Improved Query Performance
+* Simplified Relationships
+* Better DAX Efficiency
+* Easier Maintenance
+* Scalable Architecture
+
+---
+
+## 🔒 Row-Level Security (RLS)
+
+Implemented **Dynamic Row-Level Security (RLS)** to ensure secure access to project information.
+
+### Security Roles
+
+#### Project Manager
+
+Access only assigned projects.
+
+#### Department Head
+
+Access projects within their department.
+
+#### Executive Team
+
+Full access to all project data.
+
+### Benefits
+
+* Secure Reporting
+* Role-Based Access
+* Improved Data Governance
+
+---
+
+## ⚡ Advanced Power BI Concepts Used
+
+### Data Modeling
+
+* Star Schema Design
+* One-to-Many Relationships
+* Date Dimension Modeling
+
+### DAX Measures
+
+* Budget Utilization %
+* Profit Calculation
+* Task Completion %
+* Cost Variance Analysis
+* Dynamic KPI Metrics
+* Time Intelligence Functions
+
+### Power Query
+
+* Data Cleaning
+* Data Transformation
+* Data Validation
+* Query Optimization
+
+### Advanced Features
+
+* Row-Level Security (RLS)
+* Interactive Drill-Through
+* Dynamic Filtering
+* Cross-Highlighting
+* Bookmarks & Navigation
+* Custom Tooltips
+
+---
+
+## 🎨 SVG-Based Custom Visuals
+
+Custom SVG visuals were used to create dynamic KPI indicators and progress bars.
+
+### SVG Applications
+
+* Budget Utilization Indicators
+* Task Completion Bars
+* Performance Tracking KPIs
+* Progress Visualizations
+
+### Advantages
+
+* Lightweight Rendering
+* Dynamic Formatting
+* Enhanced User Experience
+* Better Visual Consistency
+
+---
+
+## 📈 Business Insights
+
+The dashboard helps stakeholders answer:
+
+* Which projects are over budget?
+* Which projects are most profitable?
+* What percentage of tasks are completed?
+* Which project managers are performing best?
+* Where are project delays occurring?
+* Which project types consume the highest budget?
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Technology       | Purpose               |
+| ---------------- | --------------------- |
+| Power BI Desktop | Dashboard Development |
+| Power Query      | Data Transformation   |
+| DAX              | Business Calculations |
+| SVG              | Custom Visual Design  |
+| Star Schema      | Data Modeling         |
+| RLS              | Data Security         |
+| Bing Maps        | Geographical Analysis |
+
+---
+
+## 🚀 Performance Optimization
+
+The dashboard was optimized using:
+
+* Star Schema Modeling
+* Efficient Relationships
+* Measure-Based Calculations
+* Query Folding
+* Reduced Cardinality
+* Optimized DAX Patterns
+
+---
+
+## ⭐ Project Highlights
+
+* End-to-End Power BI Dashboard
+* Star Schema Data Model
+* Dynamic Row-Level Security (RLS)
+* Advanced DAX Calculations
+* Custom SVG Visualizations
+* Interactive Gantt Timeline
+* Financial & Operational Analytics
+* Executive Reporting Dashboard
+
+---
+
+<img width="1197" height="750" alt="image" src="https://github.com/user-attachments/assets/f7f4163f-9102-4688-8151-cd948072cef7" />
+
+<img width="1206" height="747" alt="image" src="https://github.com/user-attachments/assets/89a25832-cc69-4254-bb43-afb959280522" />
+
+
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
