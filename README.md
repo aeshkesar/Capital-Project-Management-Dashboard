@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-The **Capital Project Management Dashboard** is an end-to-end Power BI solution designed to monitor, analyze, and optimize capital project execution. The dashboard provides stakeholders with a centralized view of project budgets, costs, profitability, task progress, resource allocation, project status, and timeline tracking.
+The **Capital Project Dashboard** is an end-to-end Power BI solution designed to monitor, analyze, and optimize capital project execution. The dashboard provides stakeholders with a centralized view of project budgets, costs, profitability, task progress, resource allocation, project status, and timeline tracking.
 
 Built using a robust **Star Schema Data Model**, advanced **DAX measures**, **Row-Level Security (RLS)**, and custom **SVG-based KPI indicators**, the solution enables project managers and executives to make data-driven decisions throughout the project lifecycle.
 
