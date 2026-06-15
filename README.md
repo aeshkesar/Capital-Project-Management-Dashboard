@@ -1,4 +1,4 @@
-# 🚧 Capital Project Management Dashboard
+# 🚧 Capital Project Dashboard
 
 ## 📌 Overview
 
